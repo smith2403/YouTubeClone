@@ -1,0 +1,203 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(227, 227, 227);
+}
+
+.leftsection {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.yt-logo {
+  height: 20px;
+  margin-left: 15px;
+}
+
+.middlesection {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  width: 0;
+  flex: 1;
+  height: 32px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.searchbar::placeholder {
+  font-size: 15px;
+}
+
+.search-btn {
+  height: 36px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
+  margin-left: -5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.search-btn .tooltip,
+.voice-btn .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip,
+.notification-container .tooltip,
+.logo-container .tooltip
+ {
+  position: absolute;
+  background-color: rgb(131, 131, 131);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -25px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.profile-container .tooltip{
+  position: absolute;
+  background-color: rgb(131, 131, 131);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-btn:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notification-container:hover .tooltip,
+.logo-container:hover .tooltip,
+.profile-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.voice-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+}
+
+.search-btn,
+.voice-btn,
+.upload-container,
+.apps-container,
+.notification-container,
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.voice-icon {
+  height: 20px;
+}
+
+.rightsection {
+  margin-right: 20px;
+  flex-shrink: 0;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.apps-icon {
+  height: 24px;
+}
+
+.notification-icon {
+  height: 24px;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.logo-location {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  right: -13px;
+  color: rgb(87, 87, 87);
+  font-size: 11px;
+}
+
+.profile-icon {
+  height: 32px;
+  border-radius: 16px;
+}
+
+.hamburger-menu,
+.yt-logo,
+.apps-icon,
+.notification-icon,
+.search-icon,
+.voice-icon,
+.upload-icon,
+.profile-icon {
+  cursor: pointer;
+}
